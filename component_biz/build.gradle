@@ -1,0 +1,5 @@
+apply from: '../scripts/module.gradle'
+
+dependencies {
+    api project(":component_basic")
+}

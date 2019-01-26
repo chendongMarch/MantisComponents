@@ -1,0 +1,10 @@
+ext.params = [
+        applicationId : "com.zfy.mantis.sample",
+        resourcePrefix: "index_"
+]
+
+apply from: '../scripts/app.gradle'
+
+dependencies {
+    implementation project(":component_biz")
+}

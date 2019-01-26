@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/music_page_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音乐页面"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/blog_page_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="博客页面"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/music_page_btn" />
+
+    <Button
+        android:id="@+id/music_service_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音乐服务"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/blog_page_btn" />
+
+    <Button
+        android:id="@+id/blog_service_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="博客服务"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/music_service_btn" />
+
+</android.support.constraint.ConstraintLayout>

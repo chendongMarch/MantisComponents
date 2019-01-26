@@ -1,0 +1,20 @@
+{
+  "entry": "main",
+  "components": [
+    {
+      "name": "main",
+      "compile": true,
+      "path": "component_main"
+    },
+    {
+      "name": "music",
+      "compile": false,
+      "path": "component_music"
+    },
+    {
+      "name": "blog",
+      "compile": true,
+      "path": "component_blog"
+    }
+  ]
+}

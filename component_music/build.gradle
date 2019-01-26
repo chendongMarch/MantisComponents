@@ -1,0 +1,5 @@
+apply from: '../scripts/module.gradle'
+
+dependencies {
+    compileOnly project(":component_biz")
+}

@@ -1,0 +1,6 @@
+include(':app')
+include(':component_biz')
+include(':component_basic')
+
+// generate by component.gradle
+apply from: '.component_setting.gradle'

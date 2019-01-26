@@ -1,0 +1,4 @@
+dependencies {
+  runtimeOnly project(':component_main')
+  runtimeOnly project(':component_blog')
+}
