@@ -18,6 +18,5 @@ public class MyApplication extends AppApplication {
         super.onCreate();
         Common.init(this, BuildConfig.class);
         ComponentX.init(this, true, Components.getComponentServiceNames());
-
     }
 }

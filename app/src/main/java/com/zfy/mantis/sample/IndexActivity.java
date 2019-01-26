@@ -3,6 +3,7 @@ package com.zfy.mantis.sample;
 import com.zfy.component.basic.ComponentX;
 import com.zfy.component.basic.mvx.mvp.app.MvpActivity;
 import com.zfy.component.basic.mvx.mvp.app.MvpV;
+import com.zfy.component.biz.Components;
 
 /**
  * CreateAt : 2019/1/25
@@ -15,6 +16,6 @@ public class IndexActivity extends MvpActivity {
 
     @Override
     public void init() {
-        ComponentX.redirect(getActivity(), BuildConfig.ENTRY);
+         ComponentX.redirect(getActivity(), BuildConfig.ENTRY);
     }
 }

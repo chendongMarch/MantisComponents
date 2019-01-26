@@ -23,15 +23,20 @@ public class MainActivity extends MvpActivity {
                 ComponentX.route(Components.BLOG_INDEX_PAGE)
                         .withString(Keys.KEY_TEST, "test")
                         .navigation(getContext());
+
             } else if (view.getId() == R.id.music_page_btn) {
                 ComponentX.route(Components.MUSIC_INDEX_PAGE)
                         .withString(Keys.KEY_TEST, "test")
                         .navigation(getContext());
             } else if (view.getId() == R.id.blog_service_btn) {
-                String blogContent = ComponentX.lookup(BlogService.class).getBlogContent(new BlogModel());
-                ToastX.show(blogContent);
+                ComponentX.service(BlogService.class, service -> {
+                    String blogContent = service.getBlogContent(new BlogModel());
+                    ToastX.show(blogContent);
+                });
             } else if (view.getId() == R.id.music_service_btn) {
-                ComponentX.lookup(MusicService.class).playMusic(new MusicModel());
+                ComponentX.service(Components.MUSIC_SERVICE, MusicService.class, service -> {
+                    service.playMusic(new MusicModel());
+                });
             }
 
         }, R.id.blog_page_btn, R.id.music_page_btn, R.id.blog_service_btn, R.id.music_service_btn);
