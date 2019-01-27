@@ -20,6 +20,8 @@ public class Components {
     public static final String BLOG_COMPONENT_SERVICE  = "/blog/component/init";
     public static final String BLOG_SERVICE            = "/blog/service/index";
     public static final String BLOG_INDEX_PAGE         = "/blog/page/index";
+    public static final int    BLOG_PAGE_EXTRA         = 0b1_1_0_1_0_1_0_1_0;
+
 
     public static final String MAIN_COMPONENT_NAME     = "main";
     public static final int    MAIN_COMPONENT_PRIORITY = 0;

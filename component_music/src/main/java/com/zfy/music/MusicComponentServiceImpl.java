@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.march.common.exts.LogX;
+import com.march.common.x.LogX;
 import com.zfy.component.basic.service.IComponentService;
 import com.zfy.component.biz.Components;
 

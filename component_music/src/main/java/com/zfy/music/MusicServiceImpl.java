@@ -3,7 +3,7 @@ package com.zfy.music;
 import android.content.Context;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.march.common.exts.ToastX;
+import com.march.common.x.ToastX;
 import com.zfy.component.biz.Components;
 import com.zfy.component.biz.music.model.MusicModel;
 import com.zfy.component.biz.music.service.MusicService;

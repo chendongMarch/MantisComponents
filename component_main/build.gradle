@@ -2,4 +2,7 @@ apply from: '../scripts/module.gradle'
 
 dependencies {
     compileOnly project(":component_biz")
+    // Required for local unit tests (JUnit 4 framework)
+    testImplementation 'junit:junit:4.12'
+
 }
