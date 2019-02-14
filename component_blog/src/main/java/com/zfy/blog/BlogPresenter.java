@@ -1,37 +1,35 @@
 package com.zfy.blog;
 
-import com.alibaba.android.arouter.facade.annotation.Autowired;
-import com.alibaba.android.arouter.facade.annotation.Route;
 import com.march.common.x.LogX;
-import com.zfy.component.basic.app.view.ViewConfig;
-import com.zfy.component.basic.mvx.mvp.app.MvpActivity;
+import com.zfy.component.basic.mvx.model.AppRepository;
+import com.zfy.component.basic.mvx.mvp.IMvpView;
+import com.zfy.component.basic.mvx.mvp.presenter.MvpPresenter;
 import com.zfy.component.biz.Components;
 import com.zfy.component.biz.blog.model.BlogModel;
 import com.zfy.component.biz.blog.service.BlogService;
+import com.zfy.mantis.annotation.LookUp;
 
 /**
- * CreateAt : 2019/1/24
+ * CreateAt : 2019/1/29
  * Describe :
  *
  * @author chendong
  */
-@Route(path = Components.BLOG_INDEX_PAGE, extras = Components.BLOG_PAGE_EXTRA)
-public class BlogActivity extends MvpActivity {
+public class BlogPresenter extends MvpPresenter<AppRepository, IMvpView> {
 
-    public static final String TAG = BlogActivity.class.getSimpleName();
+    public static final String TAG = BlogPresenter.class.getSimpleName();
 
     // 传递 key = name 的 String
-    @Autowired
+    @LookUp("name")
     String      name;
     // 传递 key = age 的 int
-    @Autowired(name = "age")
+    @LookUp("age")
     int         newAge;
     // 传递 BlogModel 对象
-    @Autowired(name = "model")
+    @LookUp("model")
     BlogModel   blogModel;
-    @Autowired(name = Components.BLOG_SERVICE)
+    @LookUp(Components.BLOG_SERVICE)
     BlogService mBlogService;
-
 
     @Override
     public void init() {
@@ -47,10 +45,5 @@ public class BlogActivity extends MvpActivity {
         } else {
             LogX.e(TAG, "music service  = null");
         }
-    }
-
-    @Override
-    public ViewConfig getViewConfig() {
-        return ViewConfig.makeMvp(R.layout.blog_activity, BlogPresenter.class);
     }
 }

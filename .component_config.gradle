@@ -1,1 +1,2 @@
+// generate by _component.gradle, do not modify!
 ext.component = [ entry: 'main' ]

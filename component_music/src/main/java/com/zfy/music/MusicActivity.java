@@ -17,9 +17,9 @@ public class MusicActivity extends MvpActivity {
 
     @Override
     public void init() {
-        getAppDelegate().setOnClickListener(v->{
+        clickView(new int[]{R.id.blog_btn}, v -> {
             ComponentX.go(getContext(), Components.BLOG_INDEX_PAGE);
-        },R.id.blog_btn);
+        });
     }
 
     @Override

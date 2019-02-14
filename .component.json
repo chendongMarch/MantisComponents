@@ -13,7 +13,7 @@
     },
     {
       "name": "blog",
-      "compile": true,
+      "compile": false,
       "path": "component_blog"
     }
   ]

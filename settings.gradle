@@ -1,7 +1,6 @@
 include(':app')
 include(':component_biz')
 include(':component_basic')
-include(':common')
 
-// generate by component.gradle
+// generate by _component.gradle, do not modify!
 apply from: '.component_setting.gradle'

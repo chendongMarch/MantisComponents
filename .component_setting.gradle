@@ -1,2 +1,2 @@
+// generate by _component.gradle, do not modify!
 include(':component_main')
-include(':component_blog')
