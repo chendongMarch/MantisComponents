@@ -9,11 +9,12 @@ buildscript {
             url "https://dl.bintray.com/zfy/maven"
         }
     }
+    ext.kotlin_version = '1.2.31'
     dependencies {
         classpath "com.alibaba:arouter-register:1.0.2"
         classpath 'com.android.tools.build:gradle:3.1.4'
-//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-//        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
     }
 }
 
